@@ -91,6 +91,6 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 ## مجوز
 
-[MIT](LICENSE)
+[MIT](LICENSE) — فونت [Vazirmatn](https://github.com/rastikerdar/vazirmatn) استفاده‌شده در بنر زیر مجوز [SIL Open Font License 1.1](docs/fonts/OFL.txt) است.
 
 </div>

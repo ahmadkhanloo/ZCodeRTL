@@ -94,4 +94,4 @@ While ZCode runs via the shortcut it exposes a DevTools port (`127.0.0.1:9222`) 
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — the bundled [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font (used in the banner) is under the [SIL Open Font License 1.1](docs/fonts/OFL.txt).
