@@ -49,7 +49,7 @@ const evalJson = async (expression) => {
 // Own toggle style (independent of the injector's), so the script is self-sufficient.
 const STYLE_ID = 'zcode-rtl-demo-capture';
 const CSS =
-  ':is(p,li,h1,h2,h3,h4,h5,h6,blockquote,td,th,dd,dt,figcaption,summary),textarea{unicode-bidi:plaintext;text-align:start;}';
+  ':is(p,li,h1,h2,h3,h4,h5,h6,blockquote,td,th,dd,dt,figcaption,summary),textarea,[contenteditable="true"],[class*="whitespace-pre-wrap"]:not(pre):not(code){unicode-bidi:plaintext;text-align:start;}';
 const ensureStyle = await evalJson(
   `(() => {
     let s = document.getElementById(${JSON.stringify(STYLE_ID)});

@@ -11,7 +11,9 @@ const POLL_MS = 2000;
 
 const CSS = `
 :is(p,li,h1,h2,h3,h4,h5,h6,blockquote,td,th,dd,dt,figcaption,summary),
-textarea {
+textarea,
+[contenteditable="true"],
+[class*="whitespace-pre-wrap"]:not(pre):not(code) {
   unicode-bidi: plaintext;
   text-align: start;
 }

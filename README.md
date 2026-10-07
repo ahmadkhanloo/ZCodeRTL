@@ -1,4 +1,4 @@
-# ZCode RTL 🇮🇷
+# ZCode RTL
 
 <p align="center">
   <img src="docs/hero.png" alt="Before: a Persian answer rendered LTR and scrambled. After: correct RTL — while code blocks stay LTR." width="100%">
@@ -6,7 +6,7 @@
 
 <!--
 GitHub About / description (copy into the repo "About" field):
-Make ZCode chat render Persian/Arabic RTL — per-paragraph auto-direction, code stays LTR. No app patching, survives updates, one-command install.
+Make ZCode chat render Persian, Arabic, Hebrew, Urdu — any RTL language — correctly. Per-paragraph auto-direction, code stays LTR. No app patching, survives updates, one-command install.
 -->
 
 Make [ZCode](https://z.ai) — Z.ai's AI coding IDE — render Persian (and any RTL language) correctly in its chat.
@@ -14,6 +14,12 @@ Make [ZCode](https://z.ai) — Z.ai's AI coding IDE — render Persian (and any 
 AI tools assume English. ZCode renders every message left-to-right, so Persian answers look scrambled: punctuation lands on the wrong side and English words jump around mid-sentence. **ZCode RTL fixes that with one CSS rule, injected at runtime — the app itself is never modified.**
 
 نسخهٔ فارسی: [README.fa.md](README.fa.md)
+
+## 🌍 Supported languages
+
+Any right-to-left script — direction is detected per paragraph, so English text and code blocks are never touched:
+
+**Persian (Farsi)** · **Arabic** · **Hebrew** · **Urdu** · **Dari** · **Kurdish** · **Pashto** · **Uyghur** · **Yiddish** · **Sindhi** …
 
 ## ✨ What you get
 
