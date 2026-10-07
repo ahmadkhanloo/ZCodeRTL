@@ -1,5 +1,9 @@
 # ‏ZCode RTL 🇮🇷
 
+<p align="center">
+  <img src="docs/hero.png" alt="قبل: پاسخ فارسی چپ‌به‌راست و به‌هم‌ریخته. بعد: راست‌به‌چپ درست — با بلاک‌های کد LTR." width="100%">
+</p>
+
 <div dir="rtl">
 
 نسخهٔ انگلیسی: [README.md](README.md)

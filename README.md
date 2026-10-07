@@ -1,5 +1,9 @@
 # ZCode RTL 🇮🇷
 
+<p align="center">
+  <img src="docs/hero.png" alt="Before: a Persian answer rendered LTR and scrambled. After: correct RTL — while code blocks stay LTR." width="100%">
+</p>
+
 <!--
 GitHub About / description (copy into the repo "About" field):
 Make ZCode chat render Persian/Arabic RTL — per-paragraph auto-direction, code stays LTR. No app patching, survives updates, one-command install.
