@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title>ZCode RTL — hero</title>
+<title>ZCode RTL — hero (real screenshots)</title>
 <style>
   @font-face {
     font-family: 'Vazirmatn';
@@ -17,7 +17,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    width: 1600px; height: 720px;
+    width: 1600px; height: 700px;
     background:
       radial-gradient(900px 500px at 20% -10%, rgba(124, 92, 255, .16), transparent 60%),
       radial-gradient(900px 500px at 85% 110%, rgba(64, 140, 255, .12), transparent 60%),
@@ -25,68 +25,42 @@
     font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
     color: #e8eaf2;
     overflow: hidden;
-    position: relative;
   }
 
-  /* ---------- brand row ---------- */
   .brand {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 28px 60px 4px;
+    padding: 22px 60px 2px;
   }
   .brand .logo { display: flex; align-items: center; gap: 14px; }
   .brand .mark {
-    width: 40px; height: 40px; border-radius: 11px;
+    width: 38px; height: 38px; border-radius: 10px;
     background: linear-gradient(135deg, #7c5cff, #4f8cff);
     display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 20px; color: #fff;
+    font-weight: 700; font-size: 19px; color: #fff;
     box-shadow: 0 4px 18px rgba(124, 92, 255, .45);
   }
-  .brand .name { font-size: 24px; font-weight: 700; letter-spacing: .2px; }
+  .brand .name { font-size: 23px; font-weight: 700; }
   .brand .name span { color: #8f7bff; }
-  .brand .tag {
-    font-size: 13px; color: #8b91a8; direction: rtl;
-  }
-  .brand .url {
-    font-family: Consolas, monospace; font-size: 13px; color: #6b7186;
-    direction: ltr;
-  }
+  .brand .tag { font-size: 13px; color: #8b91a8; direction: rtl; }
+  .brand .url { font-family: Consolas, monospace; font-size: 13px; color: #6b7186; direction: ltr; }
 
-  /* ---------- panels ---------- */
-  .row {
-    display: flex; gap: 44px; justify-content: center;
-    padding: 16px 60px 0;
-  }
-  .col { width: 704px; }
-  .label {
-    display: flex; align-items: center; gap: 10px;
-    font-size: 19px; font-weight: 700; margin: 0 6px 12px; direction: rtl;
-  }
-  .label .dot {
-    width: 10px; height: 10px; border-radius: 50%;
-  }
-  .label.bad  { color: #ff7a7a; } .label.bad  .dot { background: #ff5c5c; box-shadow: 0 0 10px rgba(255, 92, 92, .8); }
-  .label.good { color: #6fe0a8; } .label.good .dot { background: #34d17c; box-shadow: 0 0 10px rgba(52, 209, 124, .8); }
-  .label .en { font-weight: 400; color: #767c92; font-size: 13px; margin-right: auto; font-family: 'Segoe UI', sans-serif; }
-
-  /* ---------- fake app window ---------- */
   .win {
+    width: 1520px; margin: 10px auto 0;
     background: #14161f;
     border: 1px solid #262a38;
     border-radius: 14px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, .5);
     overflow: hidden;
-    height: 520px;
-    display: flex; flex-direction: column;
   }
   .titlebar {
     display: flex; align-items: center;
     background: #191c28;
     border-bottom: 1px solid #232736;
-    padding: 10px 14px;
+    padding: 8px 14px;
   }
   .titlebar .app {
     font-family: 'Segoe UI', sans-serif;
-    font-size: 12.5px; color: #9aa0b5; letter-spacing: .3px;
+    font-size: 12.5px; color: #9aa0b5;
     display: flex; align-items: center; gap: 8px;
   }
   .titlebar .app .chip {
@@ -95,80 +69,38 @@
     display: inline-flex; align-items: center; justify-content: center;
     font-size: 10px; color: #fff; font-weight: 700;
   }
+  .titlebar .real {
+    margin: 0 auto;
+    font-size: 12px; color: #6fe0a8; direction: rtl;
+    background: rgba(52, 209, 124, .08); border: 1px solid rgba(52, 209, 124, .25);
+    border-radius: 20px; padding: 2px 12px;
+  }
   .titlebar .controls {
     margin-left: auto; font-family: 'Segoe UI', sans-serif;
     color: #5d6378; font-size: 12px; letter-spacing: 6px; direction: ltr;
   }
 
-  .chat { flex: 1; padding: 20px 22px 8px; display: flex; flex-direction: column; gap: 14px; }
-
-  /* user bubble — right side in both panels (the fix does not move layout) */
-  .user { display: flex; justify-content: flex-end; }
-  .user .bub {
-    max-width: 78%;
-    background: linear-gradient(135deg, #33406b, #2c3557);
-    border: 1px solid #43507e;
-    border-radius: 14px 14px 4px 14px;
-    padding: 10px 14px; font-size: 16px; line-height: 1.9;
+  .content { padding: 12px 18px 16px; }
+  .label {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 16.5px; font-weight: 700; margin: 0 4px 7px; direction: rtl;
   }
+  .label .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .label.bad  { color: #ff7a7a; } .label.bad  .dot { background: #ff5c5c; box-shadow: 0 0 10px rgba(255, 92, 92, .8); }
+  .label.good { color: #6fe0a8; } .label.good .dot { background: #34d17c; box-shadow: 0 0 10px rgba(52, 209, 124, .8); }
+  .label .en { font-weight: 400; color: #767c92; font-size: 12.5px; margin-right: auto; font-family: 'Segoe UI', sans-serif; direction: ltr; }
 
-  .ai { display: flex; gap: 10px; }
-  .ai .avatar {
-    flex: 0 0 30px; width: 30px; height: 30px; border-radius: 9px;
-    background: linear-gradient(135deg, #7c5cff, #4f8cff);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 14px; font-weight: 700; color: #fff; margin-top: 2px;
-  }
-  .ai .msg { max-width: 86%; display: flex; flex-direction: column; gap: 8px; }
-  .ai .txt { font-size: 16px; line-height: 2.05; color: #dfe2ee; }
-  .ai .txt .kw { color: #9db4ff; font-family: 'Segoe UI', sans-serif; font-size: 13px; }
-  .ai .txt code {
-    font-family: Consolas, monospace; font-size: 12.5px; direction: ltr; unicode-bidi: embed;
-    background: #0f1117; border: 1px solid #262a38;
-    padding: 1px 6px; border-radius: 5px; color: #7ee2a8;
-  }
-
-  pre.code {
-    font-family: Consolas, 'Courier New', monospace;
-    font-size: 12.8px; line-height: 1.75;
-    background: #0e1016;
+  .shot {
+    display: block; width: 100%;
+    border-radius: 9px;
     border: 1px solid #232736;
-    border-radius: 10px;
-    padding: 12px 14px;
-    direction: ltr; text-align: left;
-    color: #aab2c8;
-    white-space: pre;
   }
-  pre.code .p { color: #7ee2a8; }
-  pre.code .o { color: #f0c674; }
-
-  .composer {
-    margin: 6px 18px 18px;
-    background: #101320;
-    border: 1px solid #262a38;
-    border-radius: 11px;
-    padding: 11px 14px;
-    font-size: 13.5px; color: #5d6378;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .composer .send {
-    width: 26px; height: 26px; border-radius: 7px;
-    background: linear-gradient(135deg, #7c5cff, #4f8cff);
-    display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: 13px;
-  }
-
-  /* ---------- THE BUG vs THE FIX ----------
-     before: base direction LTR (what ZCode does today)
-     after : the injected CSS (unicode-bidi: plaintext effect) */
-  .before .txt, .before .bub { direction: ltr; text-align: left; }
-  .after  .txt, .after  .bub { direction: rtl; text-align: start; }
+  .gap { height: 14px; }
 
   .footer {
-    text-align: center; padding-top: 16px;
-    font-size: 14px; color: #6b7186; direction: rtl;
+    text-align: center; padding-top: 12px;
+    font-size: 13.5px; color: #6b7186; direction: rtl;
   }
-  .footer b { color: #a7abbd; }
   code.cmd {
     font-family: Consolas, monospace; font-size: 12px; color: #8f95ab;
     background: #14161f; border: 1px solid #262a38; border-radius: 6px; padding: 2px 8px;
@@ -181,77 +113,28 @@
   <div class="brand">
     <div class="logo">
       <div class="mark">↔</div>
-      <div>
-        <div class="name">ZCode <span>RTL</span></div>
-      </div>
-      <div class="tag">راست‌به‌چپ‌سازی چت ZCode — بدون دست‌زدن به برنامه</div>
+      <div class="name">ZCode <span>RTL</span></div>
+      <div class="tag">راست‌به‌چپ‌سازی چت ZCode — بدون دست‌زدن به برنامه — اسکرین‌شات واقعی از همین گفتگو</div>
     </div>
     <div class="url">github.com/ahmadkhanloo/ZCodeRTL</div>
   </div>
 
-  <div class="row">
-    <!-- ================= BEFORE ================= -->
-    <div class="col">
-      <div class="label bad"><span class="dot"></span> قبل — بدون ZCode RTL <span class="en">direction: ltr (default)</span></div>
-      <div class="win before">
-        <div class="titlebar">
-          <div class="app"><span class="chip">Z</span> ZCode — newspaper</div>
-          <div class="controls">─&nbsp;▢&nbsp;✕</div>
-        </div>
-        <div class="chat">
-          <div class="user">
-            <div class="bub">توی این پروژه چند تا فایل قابل OCR هست و چقدر طول می‌کشه؟</div>
-          </div>
-          <div class="ai">
-            <div class="avatar">Z</div>
-            <div class="msg">
-              <div class="txt">
-                ‏۲۱۷ فایل قابل <span class="kw">OCR</span> پیدا کردم: ‏۱۴۹ تصویر (<code>JPG / PNG</code>) و ‏۶۸ فایل ‏<span class="kw">PDF</span>.
-              </div>
-              <div class="txt">
-                ‏تخمین زمان با <span class="kw">VLM</span> حدود ‏۲ تا ‏۵ ساعت است؛ با اجرای موازی زیر ‏۱ ساعت.
-              </div>
-              <pre class="code"><span class="p">$</span> find . -iname "*.pdf" | wc -l
-<span class="o">68</span></pre>
-            </div>
-          </div>
-        </div>
-        <div class="composer"><span>Message ZCode…</span><span class="send">➤</span></div>
-      </div>
+  <div class="win">
+    <div class="titlebar">
+      <div class="app"><span class="chip">Z</span> ZCode</div>
+      <div class="real">real screenshots — toggling only the injected stylesheet</div>
+      <div class="controls">─&nbsp;▢&nbsp;✕</div>
     </div>
-
-    <!-- ================= AFTER ================= -->
-    <div class="col">
+    <div class="content">
+      <div class="label bad"><span class="dot"></span> قبل — بدون ZCode RTL <span class="en">direction: ltr (default)</span></div>
+      <img class="shot" src="crop-shot-before.png" alt="Before — Persian text rendered LTR and scrambled">
+      <div class="gap"></div>
       <div class="label good"><span class="dot"></span> بعد — با ZCode RTL <span class="en">unicode-bidi: plaintext</span></div>
-      <div class="win after">
-        <div class="titlebar">
-          <div class="app"><span class="chip">Z</span> ZCode — newspaper</div>
-          <div class="controls">─&nbsp;▢&nbsp;✕</div>
-        </div>
-        <div class="chat">
-          <div class="user">
-            <div class="bub">توی این پروژه چند تا فایل قابل OCR هست و چقدر طول می‌کشه؟</div>
-          </div>
-          <div class="ai">
-            <div class="avatar">Z</div>
-            <div class="msg">
-              <div class="txt">
-                ‏۲۱۷ فایل قابل <span class="kw">OCR</span> پیدا کردم: ‏۱۴۹ تصویر (<code>JPG / PNG</code>) و ‏۶۸ فایل ‏<span class="kw">PDF</span>.
-              </div>
-              <div class="txt">
-                ‏تخمین زمان با <span class="kw">VLM</span> حدود ‏۲ تا ‏۵ ساعت است؛ با اجرای موازی زیر ‏۱ ساعت.
-              </div>
-              <pre class="code"><span class="p">$</span> find . -iname "*.pdf" | wc -l
-<span class="o">68</span></pre>
-            </div>
-          </div>
-        </div>
-        <div class="composer"><span>Message ZCode…</span><span class="send">➤</span></div>
-      </div>
+      <img class="shot" src="crop-shot-after.png" alt="After — correct RTL, same real window">
     </div>
   </div>
 
-  <div class="footer">نصب با یک دستور: <code class="cmd">irm https://raw.githubusercontent.com/ahmadkhanloo/ZCodeRTL/main/install.ps1 | iex</code> — بلاک‌های کد همیشه LTR می‌مانند</div>
+  <div class="footer">نصب با یک دستور: <code class="cmd">irm https://raw.githubusercontent.com/ahmadkhanloo/ZCodeRTL/main/install.ps1 | iex</code></div>
 
 </body>
 </html>
